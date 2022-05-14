@@ -716,6 +716,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="infoBtnPressed:" target="XfG-lQ-9wD" id="u5x-Pz-X5i"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CiU-Aq-x6o">
                                 <rect key="frame" x="198" y="139" width="85" height="32"/>
@@ -782,18 +785,18 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="baa-9X-Rj0">
-                                <rect key="frame" x="165" y="70.5" width="150.5" height="159"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="MU2-LX-je1"/>
-                                    <constraint firstAttribute="height" constant="150" id="hA1-Vt-LW0"/>
-                                </constraints>
+                                <rect key="frame" x="10" y="5.5" width="460.5" height="289"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="KGt-NQ-hM6">
                                     <imageReference key="image" image="photo.artframe" catalog="system" symbolScale="large"/>
                                 </imageCell>
                             </imageView>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="baa-9X-Rj0" secondAttribute="bottom" constant="10" id="2rI-qb-9PQ"/>
                             <constraint firstItem="baa-9X-Rj0" firstAttribute="centerX" secondItem="JYc-ni-Jjl" secondAttribute="centerX" id="iTD-UD-QwM"/>
+                            <constraint firstItem="baa-9X-Rj0" firstAttribute="leading" secondItem="JYc-ni-Jjl" secondAttribute="leading" constant="10" id="nyK-CF-1Cl"/>
+                            <constraint firstItem="baa-9X-Rj0" firstAttribute="top" secondItem="JYc-ni-Jjl" secondAttribute="top" constant="10" id="r6J-b1-PV7"/>
+                            <constraint firstAttribute="trailing" secondItem="baa-9X-Rj0" secondAttribute="trailing" constant="10" id="vUW-DO-qIu"/>
                             <constraint firstItem="baa-9X-Rj0" firstAttribute="centerY" secondItem="JYc-ni-Jjl" secondAttribute="centerY" id="vrN-Xm-od8"/>
                         </constraints>
                     </view>
