@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6392B406282E6798001E498F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B405282E6798001E498F /* AppDelegate.swift */; };
-		6392B408282E6798001E498F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B407282E6798001E498F /* ViewController.swift */; };
+		6392B408282E6798001E498F /* SelectCodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B407282E6798001E498F /* SelectCodeType.swift */; };
 		6392B40A282E6799001E498F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6392B409282E6799001E498F /* Assets.xcassets */; };
 		6392B40D282E6799001E498F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6392B40B282E6799001E498F /* Main.storyboard */; };
 		6392B418282E6799001E498F /* BarCodeGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B417282E6799001E498F /* BarCodeGeneratorTests.swift */; };
 		6392B422282E6799001E498F /* BarCodeGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B421282E6799001E498F /* BarCodeGeneratorUITests.swift */; };
 		6392B424282E6799001E498F /* BarCodeGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B423282E6799001E498F /* BarCodeGeneratorUITestsLaunchTests.swift */; };
+		6392B431282F9824001E498F /* BarcodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B430282F9824001E498F /* BarcodeService.swift */; };
+		6392B433282F9D1E001E498F /* ShowImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392B432282F9D1E001E498F /* ShowImageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		6392B402282E6798001E498F /* BarCodeGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarCodeGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6392B405282E6798001E498F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6392B407282E6798001E498F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6392B407282E6798001E498F /* SelectCodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCodeType.swift; sourceTree = "<group>"; };
 		6392B409282E6799001E498F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6392B40C282E6799001E498F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6392B40E282E6799001E498F /* BarCodeGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BarCodeGenerator.entitlements; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		6392B41D282E6799001E498F /* BarCodeGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCodeGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6392B421282E6799001E498F /* BarCodeGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeGeneratorUITests.swift; sourceTree = "<group>"; };
 		6392B423282E6799001E498F /* BarCodeGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6392B430282F9824001E498F /* BarcodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeService.swift; sourceTree = "<group>"; };
+		6392B432282F9D1E001E498F /* ShowImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				6392B405282E6798001E498F /* AppDelegate.swift */,
-				6392B407282E6798001E498F /* ViewController.swift */,
+				6392B407282E6798001E498F /* SelectCodeType.swift */,
+				6392B432282F9D1E001E498F /* ShowImageVC.swift */,
+				6392B430282F9824001E498F /* BarcodeService.swift */,
 				6392B409282E6799001E498F /* Assets.xcassets */,
 				6392B40B282E6799001E498F /* Main.storyboard */,
 				6392B40E282E6799001E498F /* BarCodeGenerator.entitlements */,
@@ -251,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6392B408282E6798001E498F /* ViewController.swift in Sources */,
+				6392B408282E6798001E498F /* SelectCodeType.swift in Sources */,
+				6392B433282F9D1E001E498F /* ShowImageVC.swift in Sources */,
+				6392B431282F9824001E498F /* BarcodeService.swift in Sources */,
 				6392B406282E6798001E498F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +433,7 @@
 				DEVELOPMENT_TEAM = AA4V934B24;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -452,6 +461,7 @@
 				DEVELOPMENT_TEAM = AA4V934B24;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
